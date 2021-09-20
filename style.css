@@ -1,0 +1,216 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap');
+
+::-webkit-scrollbar-button {
+    background-image: url('');
+    background-repeat: no-repeat;
+    width: 5px;
+    height: 0px
+}
+
+::-webkit-scrollbar-track {
+    background-color: #15192a;
+}
+
+::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 0px;
+    border-radius: 0px;
+    background-color: rgba(54, 62, 255, 1);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: rgba(54, 62, 255, 1);
+}
+
+::-webkit-resizer {
+    background-image: url('');
+    background-repeat: no-repeat;
+    width: 4px;
+    height: 0px
+}
+
+::-webkit-scrollbar {
+    width: 4px;
+}
+
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.wrapper {
+    width: 375px;
+    margin: 0 auto;
+    background-color: #15192a;
+    border-radius: 5px;
+    height: 812px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+.title {
+    color: #FFF;
+    text-align: center;
+    padding-top: 30px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.no__tasks {
+    color: #FFF;
+    font-size: 19px;
+    text-align: center;
+}
+
+.task__input {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+}
+
+.task__input input {
+    background-color: #1f243b;
+    border-color: transparent;
+    border-radius: 5px;
+    padding-bottom: 50px;
+    color: #FFF;
+    width: 100%;
+    margin: 0 auto;
+    box-shadow: rgba(211, 211, 211, 0.603) 0px 0px 0px 1px;
+}
+
+.task__input input:active,
+.task__input input:focus,
+.task__input input:focus-visible {
+    outline: none;
+}
+
+.task__input-btn {
+    margin-top: 10px;
+    display: inline-block;
+    width: 40%;
+    min-height: 40px;
+    border-radius: 5px;
+    background: linear-gradient(45deg, rgba(54, 62, 255, 1) 30%, rgba(152, 48, 255, 1) 70%);
+    text-decoration: none;
+    color: #FFF;
+    font-size: 16px;
+    text-align: center;
+    vertical-align: center;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15px;
+    border: none;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+.task__input-btn:hover {
+    opacity: 0.8;
+}
+
+.status__bar {
+    display: flex;
+    width: 93%;
+    margin: 0 auto;
+}
+
+.status__bar-btn {
+    display: inline-block;
+    min-height: 40px;
+    background: transparent;
+    text-decoration: none;
+    color: #FFF;
+    font-size: 16px;
+    text-align: center;
+    vertical-align: center;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15px;
+    border: none;
+    box-shadow: rgba(211, 211, 211, 0.603) 0px 0px 0px 1px;
+    font-family: 'Roboto', sans-serif;
+    width: 33%;
+}
+
+.bar-btn-active {
+    background: linear-gradient(45deg, rgba(54, 62, 255, 1) 30%, rgba(152, 48, 255, 1) 70%);
+}
+
+.todo__list {
+    width: 100%;
+    height: 500px;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.todo__list-item {
+    color: #FFF;
+    font-size: 19px;
+    width: 90%;
+    margin: 0 auto;
+    min-height: 40px;
+    background: linear-gradient(45deg, rgba(54, 62, 255, 1) 30%, rgba(152, 48, 255, 1) 70%);
+    margin-bottom: 15px;
+    border-radius: 7px;
+    padding: 7px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 0;
+}
+
+/* .todo__list-item:hover {
+    transform: translate(-50px, 0);
+    transition: all 0.5s linear;
+} */
+
+.task__item-btn {
+    background: #FFF;
+    min-height: 30px;
+    border: none;
+    color: #000;
+}
+
+
+.task__item-text {
+    display: block;
+    width: 65%;
+    padding: 5px 0px 0px 23px;
+}
+
+.completed {
+    background: linear-gradient(45deg, rgb(178, 255, 54) 30%, rgb(55, 255, 48) 70%);
+    color: #353535;
+    display: none;
+}
+
+
+.task__btns-group {
+    display: flex;
+    justify-content: space-between;
+    width: 30%;
+}
+
+.complete-btn {
+    background-color: green;
+    color: #FFF;
+    padding: 5px;
+    border-radius: 5px;
+    margin: 0px 2px;
+
+}
+
+.delete-btn {
+    background-color: red;
+    color: #FFF;
+    padding: 5px;
+    border-radius: 5px;
+    margin: 0px 2px;
+}
